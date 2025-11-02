@@ -1,0 +1,428 @@
+# PROMPT FOR CLAUDE CODE - WordPress Site Automation
+
+Copy and paste this entire prompt to Claude Code when you're ready.
+
+---
+
+## PROJECT OVERVIEW
+
+I need you to create a WordPress automation system for my site MenWellbeing.com. The site is already installed with WordPress + GeneratePress theme, but I need to automate the creation of pages, categories, and navigation structure.
+
+## WHAT I NEED YOU TO BUILD
+
+**Option A: Python Script (Preferred)**
+A Python script that uses WordPress REST API to create all pages, categories, and menus remotely.
+
+**Option B: PHP Setup Script (Alternative)**
+A single PHP file I can upload to WordPress that creates everything when I visit it once.
+
+**Choose whichever is easier and more reliable.**
+
+---
+
+## SITE INFORMATION
+
+**Site URL:** [I'LL PROVIDE THIS]
+**WordPress Admin:** [I'LL PROVIDE USERNAME]
+**Application Password:** [I'LL GENERATE AND PROVIDE THIS]
+
+---
+
+## WHAT NEEDS TO BE CREATED
+
+### 1. PAGES (4 total)
+
+**Page 1: About**
+- Title: "About"
+- Slug: "about"
+- Status: Published
+- Content: [SEE BELOW]
+
+**Page 2: Contact**
+- Title: "Contact"
+- Slug: "contact"
+- Status: Published
+- Content: [SEE BELOW]
+
+**Page 3: Privacy Policy**
+- Title: "Privacy Policy"
+- Slug: "privacy-policy"
+- Status: Published
+- Content: [SEE BELOW]
+
+**Page 4: Affiliate Disclosure**
+- Title: "Affiliate Disclosure"
+- Slug: "affiliate-disclosure"
+- Status: Published
+- Content: [SEE BELOW]
+
+---
+
+### 2. CATEGORIES (10 total, with hierarchy)
+
+**Parent Category 1: What I Want**
+- Name: "What I Want"
+- Slug: "what-i-want"
+- Description: "Products and gear that improve daily life"
+- Parent: None
+
+**Child Categories under "What I Want":**
+
+1. My Ride
+   - Name: "My Ride"
+   - Slug: "my-ride"
+   - Parent: "What I Want"
+   - Description: "Cars, motorcycles, and automotive"
+
+2. My Gear
+   - Name: "My Gear"
+   - Slug: "my-gear"
+   - Parent: "What I Want"
+   - Description: "Sports, outdoor, and hobby equipment"
+
+3. My Space
+   - Name: "My Space"
+   - Slug: "my-space"
+   - Parent: "What I Want"
+   - Description: "Home, office, and workshop"
+
+4. My Body
+   - Name: "My Body"
+   - Slug: "my-body"
+   - Parent: "What I Want"
+   - Description: "Fitness, grooming, and wellness"
+
+**Parent Category 2: What I Need**
+- Name: "What I Need"
+- Slug: "what-i-need"
+- Description: "Support, resources, and help"
+- Parent: None
+
+**Child Categories under "What I Need":**
+
+1. Mental Health
+   - Name: "Mental Health"
+   - Slug: "mental-health"
+   - Parent: "What I Need"
+   - Description: "Therapy, support, and mental wellness"
+
+2. Relationships
+   - Name: "Relationships"
+   - Slug: "relationships"
+   - Parent: "What I Need"
+   - Description: "Divorce, counseling, and connection"
+
+3. Connection
+   - Name: "Connection"
+   - Slug: "connection"
+   - Parent: "What I Need"
+   - Description: "Groups, community, and fighting loneliness"
+
+4. Career
+   - Name: "Career"
+   - Slug: "career"
+   - Parent: "What I Need"
+   - Description: "Work, burnout, and purpose"
+
+---
+
+### 3. NAVIGATION MENU
+
+**Menu Name:** "Main Menu"
+**Location:** Primary (header menu)
+
+**Menu Items (in order):**
+1. Home (link to site homepage)
+2. About (link to About page)
+3. What I Want (link to category)
+4. What I Need (link to category)
+5. Contact (link to Contact page)
+
+---
+
+### 4. FOOTER MENU (Optional)
+
+**Menu Name:** "Footer Menu"
+**Location:** Footer
+
+**Menu Items:**
+1. Privacy Policy
+2. Affiliate Disclosure
+3. Contact
+
+---
+
+## PAGE CONTENT
+
+### ABOUT PAGE CONTENT:
+
+```
+# About MenWellbeing
+
+**Most men's wellness sites get it wrong.**
+
+They either tell you to buy supplements and gear like that'll fix everything, or they tell you material things don't matter and you just need therapy and meditation.
+
+**Both approaches miss the point.**
+
+## What You Want. What You Need.
+
+Real wellbeing isn't either/or. It's both.
+
+Some days, getting a new fishing rod or setting up a home gym actually helps. Having control over something tangible matters. Taking care of your car, your space, your body—these things aren't shallow. They're part of taking care of yourself.
+
+But gear and hobbies aren't substitutes for dealing with the hard stuff. Divorce, burnout, loneliness, mental health struggles—you can't buy your way out of those. Sometimes you need actual support from actual people.
+
+**This site exists because both things are true:**
+- Taking care of the controllable stuff (your gear, your hobbies, your daily habits) genuinely improves your quality of life
+- Getting real help with the uncontrollable stuff (your relationships, your mental health, your purpose) is how you actually heal
+
+## What We Do
+
+**What I Want** - Product research, gear guides, and recommendations for the tangible things that make daily life better. Cars, outdoor equipment, fitness gear, grooming, workspace setup. Honest takes on what's worth buying based on thorough research and real user feedback.
+
+**What I Need** - Real resources for the harder stuff. Therapists who get men's issues. Support groups that don't suck. Divorce resources. Mental health help. Career coaches. The support you might need but won't always ask for.
+
+## Our Approach
+
+We don't shame you for wanting nice things. We also don't pretend that buying things fixes everything.
+
+No guru bullshit. No "alpha male" nonsense. No generic wellness advice written by people who've never been through anything.
+
+Just honest information about products worth buying and resources worth using, written for men who are dealing with real life.
+
+## What Makes This Different
+
+Most men's sites are either:
+- Affiliate content farms that'll recommend anything for a commission
+- Therapy-speak that doesn't understand how men actually talk
+- Toxic masculinity garbage that makes everything worse
+
+We're none of those.
+
+**This is a resource site**, not a personal brand. We research products thoroughly, recommend support services that actually help, and write in plain language about things that matter.
+
+If you're here because you're going through something hard—divorce, career crisis, mental health struggles, or just feeling lost—you're not alone. Millions of men are dealing with the same things. Some gear helps with the day-to-day. Real support helps with the deeper stuff. Both are okay to need.
+
+---
+
+**Contact:** contact@menwellbeing.com
+```
+
+---
+
+### CONTACT PAGE CONTENT:
+
+```
+# Contact
+
+Have questions, suggestions, or want to share your story?
+
+[Note: Contact form will be added separately via WPForms plugin]
+
+We read every message. Response time is typically 24-48 hours.
+
+You can also email us directly at: contact@menwellbeing.com
+```
+
+---
+
+### PRIVACY POLICY PAGE CONTENT:
+
+```
+# Privacy Policy
+
+Last updated: November 2, 2025
+
+MenWellbeing.com ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information.
+
+## Information We Collect
+
+**Information you provide:**
+- Email address (if you subscribe to our newsletter)
+- Name (if you fill out contact forms)
+- Any information you voluntarily share in messages
+
+**Automatically collected information:**
+- Log data (IP address, browser type, pages visited)
+- Cookies (for site functionality and analytics)
+
+## How We Use Your Information
+
+- To send you our newsletter (if you subscribed)
+- To respond to your inquiries
+- To improve our website
+- To analyze site usage via Google Analytics
+
+## Third-Party Services
+
+We use:
+- **Google Analytics** - to understand how visitors use our site
+- **Amazon Associates** - affiliate program (cookies may be placed)
+- **Email service providers** - for newsletter delivery
+
+## Affiliate Links
+
+This site contains affiliate links. When you click these links and make a purchase, we may earn a commission at no additional cost to you. See our Affiliate Disclosure for details.
+
+## Your Rights
+
+You can:
+- Unsubscribe from emails anytime
+- Request deletion of your data
+- Contact us with privacy concerns
+
+## Contact
+
+For privacy questions: contact@menwellbeing.com
+
+## Changes to This Policy
+
+We may update this policy. Changes will be posted on this page with a new "Last updated" date.
+```
+
+---
+
+### AFFILIATE DISCLOSURE PAGE CONTENT:
+
+```
+# Affiliate Disclosure
+
+**MenWellbeing.com participates in affiliate marketing programs.**
+
+## What This Means
+
+When you click on certain links on this site and make a purchase, we may earn a commission at no additional cost to you.
+
+We are a participant in:
+- Amazon Services LLC Associates Program
+- Udemy Affiliate Program
+- Other affiliate programs
+
+## Our Promise
+
+**We only recommend products and services we believe are valuable.**
+
+- All opinions are our own
+- We research products thoroughly before recommending them
+- We base recommendations on research, user reviews, and specifications
+- Commission rates do not influence our recommendations
+- We clearly mark affiliate links when possible
+
+## How It Works
+
+When you click an affiliate link and make a purchase:
+1. The company tracks that you came from our site
+2. They pay us a small commission
+3. Your price stays exactly the same
+4. This helps us keep the site running and content free
+
+## Transparency
+
+We believe in transparency:
+- Affiliate relationships do not influence our honest opinions
+- We disclose affiliate links in articles
+- We never recommend products solely for commission
+- Your trust matters more than any commission
+
+## Questions?
+
+Contact us: contact@menwellbeing.com
+
+---
+
+**Thank you for supporting MenWellbeing by using our links!**
+```
+
+---
+
+## TECHNICAL REQUIREMENTS
+
+### If Building Python Script:
+
+**Requirements:**
+- Use `requests` library for WordPress REST API
+- Handle authentication via Application Password
+- Create categories first (parent, then children)
+- Then create pages
+- Then create menus
+- Error handling for existing items (skip if already exists)
+- Print progress messages
+- Save execution log
+
+**Authentication:**
+- WordPress REST API endpoint: {site_url}/wp-json/wp/v2/
+- Use Basic Auth with application password
+- Username: [I'll provide]
+- Password: [Application password I'll generate]
+
+### If Building PHP Script:
+
+**Requirements:**
+- Single file: `menwellbeing-setup.php`
+- Check if running from authorized WordPress context
+- Use WordPress functions: `wp_insert_post()`, `wp_insert_category()`, etc.
+- Create admin page or run on direct access
+- Delete itself after successful execution (security)
+- Clear, readable success/error messages
+
+---
+
+## SECURITY CONSIDERATIONS
+
+**Important:**
+- For Python: Store credentials in separate config file, not in code
+- For PHP: Add security token/password to prevent unauthorized access
+- Log all actions
+- Allow script to be run only once
+- Provide clear instructions for deletion after use
+
+---
+
+## OUTPUT REQUIREMENTS
+
+**Please provide:**
+
+1. **Complete working script** (Python or PHP)
+2. **README with:**
+   - How to set up credentials
+   - How to run the script
+   - What to do if errors occur
+   - How to verify everything was created
+   - How to safely remove/disable after use
+3. **Any configuration files needed**
+4. **Testing instructions**
+
+---
+
+## ADDITIONAL NOTES
+
+- Site is using GeneratePress theme
+- WordPress is already installed and running
+- All plugins mentioned can be installed separately (not part of automation)
+- Focus on pages, categories, and menus only
+- Keep it simple and reliable
+
+---
+
+## WHAT I'LL PROVIDE WHEN RUNNING THE SCRIPT
+
+When I'm ready to use your script, I'll provide:
+1. My WordPress site URL
+2. WordPress admin username
+3. Application password (generated from WordPress)
+4. Any other credentials needed
+
+---
+
+## QUESTIONS FOR YOU (Claude Code)
+
+Before you start building:
+1. Do you need any other information?
+2. Which approach (Python or PHP) do you recommend for my use case?
+3. Are there any WordPress API limitations I should know about?
+4. Estimated time to build and test this?
+
+---
+
+**BUILD THIS NOW. MAKE IT BULLETPROOF AND EASY TO USE.**

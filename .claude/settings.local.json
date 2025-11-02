@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh -V:*)",
+      "Bash(pip install:*)",
+      "Bash(winget install:*)",
+      "Bash(py:*)",
+      "Bash(\"%LOCALAPPDATA%\\Programs\\Python\\Python312\\python.exe\" --version)",
+      "Bash(cmd.exe /c \"python --version\")",
+      "Bash(where:*)",
+      "Bash(C:UsersziadfAppDataLocalMicrosoftWindowsAppspython.exe -m pip install requests)",
+      "Bash(/c/Users/ziadf/AppData/Local/Microsoft/WindowsApps/python.exe -m pip install:*)",
+      "Bash(/c/Users/ziadf/AppData/Local/Programs/Python/Python312/python.exe -m pip install:*)",
+      "Bash(/c/Users/ziadf/AppData/Local/Programs/Python/Python312/python.exe:*)",
+      "WebSearch",
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
