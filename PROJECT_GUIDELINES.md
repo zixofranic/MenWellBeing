@@ -455,14 +455,104 @@ Before asking user for help, check:
 
 ---
 
+## AI Content Automation Strategy (AGREED DECISIONS)
+
+**Documented:** November 2, 2025
+**Status:** Active Development
+
+### Core Principles
+
+1. **Quality First** - No compromise on content quality
+2. **Full Automation** - Link all APIs together from day one
+3. **Claude-Powered** - Use Claude exclusively for content generation (Max plan bandwidth available)
+4. **Publishing Cadence** - Generate 2 articles/day, review, publish at optimal times
+5. **Content Mix** - 60% First Timer Tier 1, 40% other topics (test market)
+
+### Affiliate Link Strategy
+
+**Automation Level:** FULL AUTO
+- Amazon Product Advertising API integration
+- 5-star products only (verified ratings)
+- Auto-insert affiliate links during content generation
+- Multiple revenue streams per article (Amazon + Udemy + BetterHelp)
+
+### Content Generation Pipeline
+
+```
+CSV Topic → Claude AI → Full Article (2000-3000 words) →
+Affiliate API (find 5-star products) → Auto-insert links →
+WordPress Gutenberg Format → Publish → Update CSV
+```
+
+### Publishing Schedule
+
+- **Frequency:** 2 articles per day
+- **Best Practice Times:**
+  - Morning: 9 AM EST (breakfast reading)
+  - Evening: 7 PM EST (after-work browsing)
+- **Review Process:** Manual review before first publish, then trust system
+
+### API Integrations Required
+
+1. **Claude API** - Content generation (already available via CLI)
+2. **Amazon Product Advertising API** - Product search, ratings, affiliate links
+3. **Udemy Affiliate API** - Course recommendations
+4. **WordPress REST API** - Publishing (already configured)
+5. **BetterHelp Affiliate** - Manual link insertion (no API available)
+
+### Phase 1: Proof of Concept (TODAY)
+
+1. Generate first article from Tier 1 First Timer topics
+2. Fine-tune with user until satisfied
+3. Generate 4 more articles (total 5)
+4. Publish all 5 with screenshots
+5. Submit screenshots to Udemy for affiliate approval
+
+### File Structure for Automation
+
+```
+C:\dev\MenWellBeing\
+├── automation/                    # Automation scripts (IN PROGRESS)
+│   ├── wordpress_publisher.py     # Publish to WordPress (CREATED)
+│   ├── publish_article_1.py      # Article 1 publisher (CREATED)
+│   └── config/                   # Config directory
+├── articles/                      # Generated articles (NEW)
+│   └── article-1-christmas-gifts-divorced-dad.md  # Article 1 (READY)
+├── content_*.csv                  # Content strategy CSVs
+├── PROJECT_GUIDELINES.md          # This file (UPDATED)
+├── CHANGELOG.md                   # Daily progress tracking (NEW)
+├── config.json                    # WordPress credentials (DO NOT COMMIT)
+└── menwellbeing_setup.py         # Original WordPress setup script
+```
+
+### Content Quality Standards (UPDATED Nov 2, 2025)
+
+- **Word Count:** 1,500-2,000 words (data-driven optimal length for SEO)
+- **Product Links:** 15-25 per article (Amazon only for first batch)
+- **Product Ratings:** 4.5+ stars minimum, 1,000+ reviews preferred
+- **Your KDP Products:** Featured in relevant articles (Divorce Journal, Coloring Book)
+- **SEO:** Target keywords from CSV, proper heading structure, internal linking
+- **Tone:** Direct, honest, no BS (per brand guidelines)
+- **Images:** Amazon product images (manual upload initially) or stock photos
+- **Affiliate Tag:** menwellbeing-20 (all links use this tag)
+
+### Success Metrics
+
+- **Article Quality:** User satisfaction with first 5 articles
+- **Affiliate Integration:** All links working, 5-star products only
+- **Publishing Success:** All 5 articles live on WordPress
+- **Udemy Approval:** Screenshots submitted, awaiting approval
+
+---
+
 ## Next Steps (Future Development)
 
-- Add blog post creation automation
-- Category-specific content templates
-- SEO optimization scripts
-- Image upload automation
-- Product recommendation templates
-- Resource database integration
+- ✅ AI content automation system (IN PROGRESS)
+- Image generation/upload automation
+- Advanced SEO optimization
+- A/B testing different article structures
+- Performance analytics integration
+- Email list integration for lead magnets
 
 ---
 

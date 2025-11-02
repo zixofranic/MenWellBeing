@@ -1,6 +1,10 @@
 # WordPress credentials - NEVER COMMIT!
 config.json
 
+# Automation config - API keys and credentials
+automation/config/api_keys.json
+automation/config/*.json
+
 # Log files
 setup_log_*.txt
 *.log
